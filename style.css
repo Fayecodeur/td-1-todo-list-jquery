@@ -65,10 +65,9 @@ li {
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   transition: all 0.3s ease;
-  cursor: pointer; /* ✅ curseur main sur les tâches */
+  cursor: pointer; 
 }
 
-/* Survol de la tâche */
 li:hover {
   background-color: #eef6ff;
 }
@@ -81,7 +80,7 @@ li.done {
   border: 1px solid #ff4d4d;
 }
 
-/* Bouton supprimer */
+/* Bouton de suppression */
 li button {
   background: #ff5252;
   color: #fff;
