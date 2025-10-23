@@ -45,6 +45,7 @@ button:hover {
   background-color: #0056b3;
 }
 
+/* Liste des tâches */
 ul {
   list-style: none;
   padding: 0;
@@ -52,6 +53,7 @@ ul {
   margin: 0 auto;
 }
 
+/* Élément de tâche */
 li {
   background: white;
   margin: 10px 0;
@@ -62,14 +64,39 @@ li {
   align-items: center;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer; /* ✅ curseur main sur les tâches */
 }
 
+/* Survol de la tâche */
+li:hover {
+  background-color: #eef6ff;
+}
+
+/* Tâche terminée */
 li.done {
   text-decoration: line-through;
-  color: gray;
-  background-color: #eaeaea;
+  color: #b30000;
+  background-color: #ffe5e5;
+  border: 1px solid #ff4d4d;
 }
 
+/* Bouton supprimer */
+li button {
+  background: #ff5252;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+li button:hover {
+  background: #d32f2f;
+}
+
+/* Message quand la liste est vide */
 #emptyMsg {
   color: gray;
   font-size: 1rem;
